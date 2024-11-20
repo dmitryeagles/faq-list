@@ -31,6 +31,7 @@ const FaqItem = ({ faq, fetchFaqs, setModalIsOpen, setCurrentFaqId }: FaqItemPro
         <button onClick={handleLike}>Like ({faq.likes})</button>
         <button onClick={handleDislike}>Dislike ({faq.dislikes})</button>
       </div>
+      {faq.comments.length > 0 &&
       <div>
         <h3>Comments:</h3>
         <ul>
@@ -38,7 +39,7 @@ const FaqItem = ({ faq, fetchFaqs, setModalIsOpen, setCurrentFaqId }: FaqItemPro
             <li key={index}>{comment}</li>
           ))}
         </ul>
-      </div>
+      </div>}
     </li>
   );
 };
