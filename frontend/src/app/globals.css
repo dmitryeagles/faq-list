@@ -1,0 +1,201 @@
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --font-family: 'GeistVF', Arial, Helvetica, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --primary-color: #0056b3;
+    --secondary-color: #495057;
+  }
+}
+
+html,
+body {
+  position: relative;
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  line-height: 1.6;
+  padding: 20px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: var(--foreground);
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Form Styles */
+input, textarea, select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--secondary-color);
+}
+
+/* List Styles */
+ul, ol {
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Image Styles */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.mt-1, .mt-2, .mt-3, .mt-4, .mt-5 {
+  margin-top: 0.25rem;
+  margin-top: 0.5rem;
+  margin-top: 0.75rem;
+  margin-top: 1rem;
+  margin-top: 1.25rem;
+}
+
+.mb-1, .mb-2, .mb-3, .mb-4, .mb-5 {
+  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+/* FAQ Styles */
+.faq-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.faq-item {
+  background-color: var(--background);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.faq-question {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.faq-answer {
+  margin-bottom: 1rem;
+}
+
+.faq-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Modal Styles */
+.modal-content {
+  background-color: var(--background);
+  border-radius: 4px;
+  padding: 20px;
+  width: 300px;
+}
+
+.modal-header {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.modal-input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn-container {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
